@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: Online-movie-ticket-booking-1
+    runtime: java
+    plan: free
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
